@@ -1,0 +1,30 @@
+.header {
+  height: 100vh;
+  background-image: $gardient-color-image;
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  position: relative;
+}
+
+.logo-box {
+  position: absolute;
+  top: $logo-top;
+  left: $logo-left;
+  .logo {
+    height: $logo-image-height;
+    width: auto;
+    background-image: $logo-image;
+    z-index: 100;
+  }
+}
+
+.heading-primary {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: $color-white;
+  text-transform: uppercase;
+}

@@ -1,0 +1,50 @@
+
+.btn {
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 1.2rem 2rem;
+  display: inline-block;
+  color: $color-gray;
+  border-radius: 5rem;
+  transition: all 0.2s;
+  position: relative;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
+  &:hover {
+    transform: translateY(-0.3rem);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    &::after {
+      transform: scaleX(1.6) scaleY(1.2);
+      opacity: 0;
+    }
+  }
+  &:active {
+    transform: translateY(-0.1rem);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  }
+  &::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    transition: all 0.4s;
+  }
+}
+
+.btn-white {
+  background-color: $color-white;
+  &::after {
+    background-color: $color-white;
+  }
+}
+
+.btn-animated {
+  animation: button-animation 1s ease-in 2s;
+  animation-fill-mode: backwards;
+}

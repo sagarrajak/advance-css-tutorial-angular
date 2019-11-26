@@ -1,0 +1,19 @@
+
+.heading-primary-main {
+  display: block;
+  font-size: 6rem;
+  font-weight: 400;
+  letter-spacing: 3.5rem;
+  -webkit-animation: roll-in-left 1s ease-in both;
+  animation: roll-in-left 1s ease-in both;
+}
+.heading-primary-sub {
+  display: block;
+  letter-spacing: 1.5rem;
+  font-weight: 700;
+  animation-name: roll-in-right;
+  animation-delay: 1s;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: backwards;
+}
