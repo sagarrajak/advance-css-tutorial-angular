@@ -1,0 +1,21 @@
+@mixin  clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin  grid {
+  @for $i from 2 through 4 {
+    @for $j from 1 through $i {
+      $tem : $j - 1;
+      .col-#{$j}-of-#{$i} {
+        width: calc( #{$j} * (100% - #{($i - 1) * $gutter-horizontal})/#{$i}  + #{$tem} * #{$gutter-horizontal} );
+        &:not(:last-child) {
+          margin-right: $gutter-horizontal;
+        }
+      }
+    }
+  }
+}

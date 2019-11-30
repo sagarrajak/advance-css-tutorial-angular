@@ -1,6 +1,7 @@
 //@import "abstract/functions";
-//@import "abstract/mixins";
 @import "abstract/variables";
+@import "abstract/mixin";
+
 
 @import "base/base";
 @import "base/animation";
@@ -10,5 +11,7 @@
 @import "component/button";
 
 @import "layout/header";
+@import "layout/grid";
+
 
 
