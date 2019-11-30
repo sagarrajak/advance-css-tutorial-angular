@@ -17,3 +17,21 @@
   animation-timing-function: ease-out;
   animation-fill-mode: backwards;
 }
+
+.heading-secondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  letter-spacing: 0.2rem;
+  color: transparent;
+  cursor: pointer;
+  transition: all 0.2s;
+  &:hover {
+    transform: skewY(2deg) skewX(15deg) scale(1.1);
+  }
+}

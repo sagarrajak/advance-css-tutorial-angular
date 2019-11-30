@@ -19,3 +19,11 @@
     }
   }
 }
+
+@mixin margin {
+  @for $i from 1 through 20 {
+    .u-margin-bottom-#{$i} {
+      margin-bottom: 0.5 * $i * 1rem;
+    }
+  }
+}
